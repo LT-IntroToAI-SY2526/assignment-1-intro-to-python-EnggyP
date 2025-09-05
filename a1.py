@@ -1,5 +1,5 @@
 # Assignment 1: AI-Generated Python Problems
-# Name: [Your Name Here]
+# Name: [Enggy Puma]
 
 """
 AI-Generated Problem Set
@@ -20,10 +20,17 @@ Remember: The goal is to LEARN, not just get working code!
 
 """
 MY ORIGINAL AI PROMPT:
-[Paste the prompt you used to generate your problem set here]
+[I'm learning Python basics in a high school programming class. I have don't have any experience with Java. I'm new to programming. Can you create 5-7 practice problems that cover:
+> - Variables and basic data types
+> - Conditionals (if/elif/else)
+> - Loops (for and while)
+> - Functions
+> - Basic list operations
+> 
+> Make them progressively more challenging. Make sure each problem has clear instructions and example inputs/outputs.]
 
 Example: "I'm learning Python basics in a high school programming class. 
-I have some experience with Java. Can you create 5-7 practice problems that cover..."
+I have don't have experience with Java. Can you create 5-7 practice problems that cover..."
 """
 
 # =============================================================================
@@ -31,10 +38,11 @@ I have some experience with Java. Can you create 5-7 practice problems that cove
 # =============================================================================
 
 """
-PROBLEM 1: [Problem Title/Description]
+PROBLEM 1: [Greeting Generator
+Task: Write a program that stores your name and age in variables, then prints a greeting like: "Hello, my name is Alex and I am 16 years old."]
 [Copy the complete problem description from your AI assistant]
 
-Example:
+Example: 
 Problem: Write a function called 'is_even' that takes an integer and returns 
 True if the number is even, False if it's odd.
 

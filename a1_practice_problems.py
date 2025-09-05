@@ -14,6 +14,7 @@ check and we'll be doing them in class.
 Make sure to complete the a1.py problems which should be AI generated.
 """
 
+from ast import Return
 from typing import List, TypeVar
 
 
@@ -27,7 +28,10 @@ def absolute(n: int) -> int:
     Returns:
         the absolute value of the passed in number
     """
-    raise NotImplementedError("absolute")
+    if n < 0:
+    
+        return -1 * n
+    
 
 
 def factorial(n: int) -> int:
@@ -40,7 +44,9 @@ def factorial(n: int) -> int:
     Returns:
         factorial of the passed in number
     """
-    raise NotImplementedError("factorial")
+    if n > 0:
+
+        return
 
 
 T = TypeVar("T")
