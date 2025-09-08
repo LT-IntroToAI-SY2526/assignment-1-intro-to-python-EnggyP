@@ -20,8 +20,9 @@ Remember: The goal is to LEARN, not just get working code!
 
 """
 MY ORIGINAL AI PROMPT:
-[I'm learning Python basics in a high school programming class. I have don't have any experience with Java. I'm new to programming. Can you create 5-7 practice problems that cover:
-> - Variables and basic data types
+[I'm learning Python basics in a high school programming class. I have don't have any experience with Python.
+I'm new to programming. Can you create 5-7 practice problems that cover:
+> - Data
 > - Conditionals (if/elif/else)
 > - Loops (for and while)
 > - Functions
@@ -38,9 +39,8 @@ I have don't have experience with Java. Can you create 5-7 practice problems tha
 # =============================================================================
 
 """
-PROBLEM 1: [Greeting Generator
-Task: Write a program that stores your name and age in variables, then prints a greeting like: "Hello, my name is Alex and I am 16 years old."]
-[Copy the complete problem description from your AI assistant]
+PROBLEM 1: [Greeting Generator/Variables and Data Types]
+[Write a program that stores your name, age, and favorite color in variables. Then print a sentence using those variables.]
 
 Example: 
 Problem: Write a function called 'is_even' that takes an integer and returns 
@@ -52,9 +52,17 @@ Example inputs/outputs:
 """
 
 
+def calculate_grade(score): 
+    """
+    """
+    if score >= 90:
+        return "A"
 
-
-
+"""
+PROBLEM 2: [Odd or Even?/Conditials (if/else)]
+[Ask the user to enter a number. Print whether the number is even or odd.]
+"""
+result = 7 
 
 
 
@@ -77,8 +85,8 @@ print(f"is_even(4): {is_even(4)}")  # Should print True
 print(f"is_even(7): {is_even(7)}")  # Should print False
 """
 
-print("Testing Problem 1:")
-# Add your tests here
+print(calculate_grade(78))
+# should print C
 
 print("\nTesting Problem 2:")
 # Add your tests here
