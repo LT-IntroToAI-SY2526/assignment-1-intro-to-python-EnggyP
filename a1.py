@@ -42,6 +42,17 @@ I have don't have experience with Java. Can you create 5-7 practice problems tha
 PROBLEM 1: [Greeting Generator/Variables and Data Types]
 [Write a program that stores your name, age, and favorite color in variables. Then print a sentence using those variables.]
 
+"""
+
+name = input("What is your name?")
+print(f"Hello, {name}! Welcome to the world of Python.")
+
+
+
+
+
+"""
+
 Example: 
 Problem: Write a function called 'is_even' that takes an integer and returns 
 True if the number is even, False if it's odd.
@@ -50,19 +61,44 @@ Example inputs/outputs:
 - is_even(4) should return True
 - is_even(7) should return False
 """
-
-
-def calculate_grade(score): 
-    """
-    """
-    if score >= 90:
-        return "A"
-
 """
 PROBLEM 2: [Odd or Even?/Conditials (if/else)]
 [Ask the user to enter a number. Print whether the number is even or odd.]
 """
-result = 7 
+return 
+
+
+
+"""
+PROBLEM 3: [Password Checker| Concepts: Conditionals, strings]
+[Write a program that asks the user to enter a password. If the password is "secret123", print "Access granted." Otherwise, print "Access denied."]
+"""
+
+
+
+
+
+
+"""
+PROBLEM 4: [Count to Ten]
+[Write a program that uses a loop to print the numbers from 1 to 10, one per line.]
+
+
+"""
+"""
+PROBLEM 5: [Grading]
+
+"""
+
+def calculate_grade(score): 
+    if score >= 90:
+        return "A"
+    pass
+
+
+"""
+
+
 
 
 
@@ -73,19 +109,20 @@ result = 7
 # PART 3: TESTING YOUR SOLUTIONS
 # =============================================================================
 
-
+"""
 """
 Test all your solutions with different inputs
 
 Add asserts if you feel comfortable
 
 Example:
+
 print("Testing Problem 1:")
 print(f"is_even(4): {is_even(4)}")  # Should print True
 print(f"is_even(7): {is_even(7)}")  # Should print False
 """
 
-print(calculate_grade(78))
+print()
 # should print C
 
 print("\nTesting Problem 2:")
@@ -97,7 +134,7 @@ print("\nTesting Problem 3:")
 print("\nTesting Problem 4:")
 # Add your tests here
 
-print("\nTesting Problem 5:")
-# Add your tests here
+print(calculate_grade(78))
+
 
 
