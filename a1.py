@@ -44,10 +44,8 @@ PROBLEM 1: [Greeting Generator/Variables and Data Types]
 
 """
 
-name = input("What is your name?")
-print(f"Hello, {name}! Welcome to the world of Python.")
-
-
+# name = input("What is your name?")
+# print(f"Hello, {name}! Welcome to the world of Python.")
 
 
 
@@ -65,8 +63,9 @@ Example inputs/outputs:
 PROBLEM 2: [Odd or Even?/Conditials (if/else)]
 [Ask the user to enter a number. Print whether the number is even or odd.]
 """
-return 
-
+def int(input(5)): 
+    if 
+        return "false"
 
 
 """
@@ -125,7 +124,7 @@ print(f"is_even(7): {is_even(7)}")  # Should print False
 print()
 # should print C
 
-print("\nTesting Problem 2:")
+print(f"is_even(5): {is_even(5)}")
 # Add your tests here
 
 print("\nTesting Problem 3:")

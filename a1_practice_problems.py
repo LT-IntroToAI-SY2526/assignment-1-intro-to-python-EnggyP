@@ -85,7 +85,13 @@ def sum_list(lst: List[int]) -> int:
     Returns:
         the sum of the passed in list
     """
-    
+    # This is how the built in function is used
+    #  return sum(lst)
+    total = 0
+    for element in lst: 
+        total += element
+    # print (total)
+    return total        
 
 
 def mean(lst: List[int]) -> float:
@@ -151,6 +157,7 @@ if __name__ == "__main__":
         5,
     ], "every_other of [1,2,3,4,5] failed"
     assert sum_list([1, 2, 3]) == 6, "sum_list of [1,2,3] failed"
+    assert sum_list([4, 7, 10, 23, 7]) == 51, "sum_list of [4, 7, 10, 23, 7] failed"
     assert mean([1, 2, 3, 4, 5]) == 3, "mean of [1,2,3,4,5] failed"
     assert median([1, 2, 3, 4, 5]) == 3, "median of [1,2,3,4,5] failed"
 
