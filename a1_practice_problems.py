@@ -86,7 +86,7 @@ def sum_list(lst: List[int]) -> int:
         the sum of the passed in list
     """
     # This is how the built in function is used
-    #  return sum(lst)
+    # return sum(lst)
     total = 0
     for element in lst: 
         total += element
@@ -103,7 +103,7 @@ def mean(lst: List[int]) -> float:
     Returns:
         the mean of the passed in list
     """
-    raise NotImplementedError("mean")
+    return sum_list(lst) / len(lst) if lst else 0
 
 
 def median(lst: List[int]) -> float:
@@ -118,7 +118,12 @@ def median(lst: List[int]) -> float:
     Returns:
         the median of the passed in list
     """
-    raise NotImplementedError("median")
+    if len(lst) % 2 == 1: 
+        return lst[len(lst) // 2 ]
+    else: 
+        m1 = len(lst) // 2
+        m2 = m1 - 1
+        return (lst[m1] + lst[m2]) / 2
 
 
 def duck_duck_goose(lst: List[str]) -> List[str]:
@@ -140,7 +145,7 @@ def duck_duck_goose(lst: List[str]) -> List[str]:
     Returns:
         the resulting list after playing duck duck goose
     """
-    raise NotImplementedError("duck_duck_goose")
+    
 
 
 # this line causes the nested code to be skipped if the file is imported instead of run
@@ -151,16 +156,14 @@ if __name__ == "__main__":
     assert factorial (5) == 120, "factorial of 5 failed"
     assert factorial (1) == 1, "factorial of 1 failed"
     assert factorial (0) == 1, "factorial of 0 failed"
-    assert every_other([1, 2, 3, 4, 5]) == [
-        1,
-        3,
-        5,
-    ], "every_other of [1,2,3,4,5] failed"
+    assert every_other([1, 2, 3, 4, 5]) == [1, 3, 5], "every_other of [1,2,3,4,5] failed"
     assert sum_list([1, 2, 3]) == 6, "sum_list of [1,2,3] failed"
     assert sum_list([4, 7, 10, 23, 7]) == 51, "sum_list of [4, 7, 10, 23, 7] failed"
     assert mean([1, 2, 3, 4, 5]) == 3, "mean of [1,2,3,4,5] failed"
+    assert mean([1, 2, 3, 4, 5, 6]) == 21/6, "mean of [1,2,3,4,5,6] failed"
+    assert mean([]) == 0, "mean of [] failed"
     assert median([1, 2, 3, 4, 5]) == 3, "median of [1,2,3,4,5] failed"
-
+    assert median([1, 2, 3, 4, 5, 6]) == 3.5, "median of [1,2,3,4,5,6] failed"
     names = ["roscoe", "kim", "woz", "solin", "law", "remess"]
     assert duck_duck_goose(names) == ["roscoe", "law"]
 
