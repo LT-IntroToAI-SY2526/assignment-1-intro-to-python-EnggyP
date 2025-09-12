@@ -145,7 +145,25 @@ def duck_duck_goose(lst: List[str]) -> List[str]:
     Returns:
         the resulting list after playing duck duck goose
     """
-    
+    position = 0
+    current = "duck1"
+    while len(lst) > 2:
+        if current == "duck1":
+            current = "duck2"
+            position += 1
+        elif current == "duck2":
+            current = "goose"
+            position += 1
+        else: # curremt is goose
+            current = "duck1"
+            lst.pop(position)
+
+        # wrap around 
+        if position ==len(lst):
+            position = 0
+
+    return lst
+
 
 
 # this line causes the nested code to be skipped if the file is imported instead of run
@@ -165,6 +183,8 @@ if __name__ == "__main__":
     assert median([1, 2, 3, 4, 5]) == 3, "median of [1,2,3,4,5] failed"
     assert median([1, 2, 3, 4, 5, 6]) == 3.5, "median of [1,2,3,4,5,6] failed"
     names = ["roscoe", "kim", "woz", "solin", "law", "remess"]
-    assert duck_duck_goose(names) == ["roscoe", "law"]
+    assert duck_duck_goose(names) == ["roscoe", "law"], "duck_duck_goose assert 1 failed"
+    names = ["avery", "ashley","levi", "victoria", "maddox"]
+    assert duck_duck_goose(names) == ["ashley", "victoria"], "duck_duck_goose assert 2 failed"
 
     print("All tests passed!")
