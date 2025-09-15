@@ -28,7 +28,7 @@ I'm new to programming. Can you create 5-7 practice problems that cover:
 > - Functions
 > - Basic list operations
 > 
-> Make them progressively more challenging. Make sure each problem has clear instructions and example inputs/outputs.]
+> Make them progressively more challenging. Make sure each problem has clear instructions and example inputs/outputs. Without having to print the code.]
 
 Example: "I'm learning Python basics in a high school programming class. 
 I have don't have experience with Java. Can you create 5-7 practice problems that cover..."
@@ -39,15 +39,12 @@ I have don't have experience with Java. Can you create 5-7 practice problems tha
 # =============================================================================
 
 """
-PROBLEM 1: [Greeting Generator/Variables and Data Types]
-[Write a program that stores your name, age, and favorite color in variables. Then print a sentence using those variables.]
+PROBLEM 1: [Age In Months]
+[ Write a function called age_in_months that takes in one number (a person's age in years) and returns how many months old they are.]
 
 """
-
-name = input("What is your name?")
-age = input("How old are you?")
-color = input("What is your favorite color?")
-print(f"Hello, {name}! You are {age} years old! Welcome to the world of Python. {color} is a pretty color")
+def age_in_months(num):
+    if num 
 
 
 
@@ -63,32 +60,60 @@ Example inputs/outputs:
 """
 """
 PROBLEM 2: [Odd or Even?/Conditials (if/else)]
-[Ask the user to enter a number. Print whether the number is even or odd.]
+[Write a function called is_even that takes in a number and returns the string "Even" if it's even, or "Odd" if it's odd.]
+"""
+
+def check_number(num):
+    if num % 2 == 0:
+        return True
+    else:
+        return False
+def is_even(num):
+    return num % 2 == 0
+
+"""
+PROBLEM 3: [Count Down from a Number]
+[ Write a function called count_down that takes a number and returns a list counting down to 0.]
+"""
+def count_down(num):
+    current = num
+    while current >= 0:
+        result.append(current)
+    
+
+
+
+
+
+"""
+PROBLEM 4: [First Letter Checker]
+[ Write a function called starts_with_a that takes a word and returns True if it starts with the letter 'a' or 'A', and False otherwise.]
+
+
+"""
+
+def starts_with_a(word):
+    if word == a:
+        return True
+    else:
+        return False
+def check_letter(word):
+    return word == starts_with_a
+
+
+"""
+PROBLEM 5: [Multiply All Numbers in a List]
+[Write a function called multiply_list that takes a list of numbers and returns the product of all the numbers.]
 """
 
 
 
-"""
-PROBLEM 3: [Password Checker| Concepts: Conditionals, strings]
-[Write a program that asks the user to enter a password. If the password is "secret123", print "Access granted." Otherwise, print "Access denied."]
-"""
-
-
-
 
 
 
 """
-PROBLEM 4: [Count to Ten]
-[Write a program that uses a loop to print the numbers from 1 to 10, one per line.]
-
-
+PROBLEM 7: [Grading]
 """
-"""
-PROBLEM 5: [Grading]
-
-"""
-
 def calculate_grade(score): 
     if score >= 90:
         return "A"
@@ -124,11 +149,11 @@ print(f"is_even(7): {is_even(7)}")  # Should print False
 print()
 # should print C
 
-print ()
-# Add your tests here
+print(f"is_even(15): {is_even(15)}") 
 
-print("\nTesting Problem 3:")
-# Add your tests here
+
+print(f"count_down(4)")
+
 
 print("\nTesting Problem 4:")
 # Add your tests here
