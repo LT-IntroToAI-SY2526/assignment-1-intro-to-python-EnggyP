@@ -44,8 +44,8 @@ PROBLEM 1: [Age In Months]
 
 """
 def age_in_months(num):
-    if num 
-
+    months = num * 12
+    return months
 
 
 """
@@ -71,18 +71,15 @@ def check_number(num):
 def is_even(num):
     return num % 2 == 0
 
+
+
 """
 PROBLEM 3: [Count Down from a Number]
 [ Write a function called count_down that takes a number and returns a list counting down to 0.]
 """
-def count_down(num):
-    current = num
-    while current >= 0:
-        result.append(current)
+def count_down(start):
+    return list(range(start, -1, -1))
     
-
-
-
 
 
 """
@@ -93,31 +90,40 @@ PROBLEM 4: [First Letter Checker]
 """
 
 def starts_with_a(word):
-    if word == a:
+    if len(word) == 0:
         return True
-    else:
+    first_letter = word[0]
+    if first_letter == 'a' or first_letter == 'A':
+        return True
+    else: 
         return False
-def check_letter(word):
-    return word == starts_with_a
-
-
-"""
-PROBLEM 5: [Multiply All Numbers in a List]
-[Write a function called multiply_list that takes a list of numbers and returns the product of all the numbers.]
-"""
-
-
-
 
 
 
 """
-PROBLEM 7: [Grading]
+PROBLEM 5: [FizzBuzz Life]
+[ Write a function called fizzbuzz_lite that takes a number n and returns a list from 1 to n.
+If a number is divisible by 3, put "Fizz" instead.
+
+
+If it's divisible by 5, put "Buzz".
+
+
+If divisible by both 3 and 5, put "FizzBuzz".]
 """
-def calculate_grade(score): 
-    if score >= 90:
-        return "A"
-    pass
+def fizzbuzz_lite(n):
+    result = []
+    for i in range(1, n + 1):
+        if i % 3 == 0 and i % 5 == 0:
+            result += ["FizzBuzz"]
+        elif i % 3 == 0:
+            result += ["Fizz"]
+        elif i % 5 == 0:
+            result += ["Buzz"]
+        else:
+            result += [i]
+    return result
+
 
 
 """
@@ -146,19 +152,20 @@ print(f"is_even(4): {is_even(4)}")  # Should print True
 print(f"is_even(7): {is_even(7)}")  # Should print False
 """
 
-print()
-# should print C
+print(age_in_months(10))
+print(age_in_months(5))
 
 print(f"is_even(15): {is_even(15)}") 
+print(f"is_even(20): {is_even(20)}") 
 
 
-print(f"count_down(4)")
+print(count_down(4))
+print(count_down(7))
+
+print(starts_with_a("apricot"))
+print(starts_with_a("mango"))
 
 
-print("\nTesting Problem 4:")
-# Add your tests here
-
-print(calculate_grade(78))
-
+print(fizzbuzz_lite(17))
 
 
